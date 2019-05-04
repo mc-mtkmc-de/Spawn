@@ -1,6 +1,7 @@
 package de.spawn.listener;
 
 import org.bukkit.Bukkit;
+import org.bukkit.GameMode;
 import org.bukkit.Location;
 import org.bukkit.World;
 import org.bukkit.configuration.file.FileConfiguration;
@@ -17,6 +18,8 @@ public class JoinListener implements Listener {
 	public void handlePlayerJoin(PlayerJoinEvent event) {
 		Player player = event.getPlayer();
 		event.setJoinMessage("§aDer Spieler §6" + player.getName() + "§a hat den Server betreten.");
+		player.setGameMode(GameMode.SURVIVAL);
+		player.setFoodLevel(20);
 		
 		FileConfiguration config = Spawn.getPlugin().getConfig();
 		
