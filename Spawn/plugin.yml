@@ -1,0 +1,10 @@
+name: Spawn
+version: 1.0
+author: Tempoo50
+main: de.spawn.main.Spawn
+
+commands:
+   SetSpawn:
+      description: Setze den Spawnpunkt!
+   Spawn:
+      description: Teleportiere dich zum Spawn!
