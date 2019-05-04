@@ -20,6 +20,7 @@ public class JoinListener implements Listener {
 		event.setJoinMessage("§aDer Spieler §6" + player.getName() + "§a hat den Server betreten.");
 		player.setGameMode(GameMode.SURVIVAL);
 		player.setFoodLevel(20);
+		player.setHealth(20);
 		
 		FileConfiguration config = Spawn.getPlugin().getConfig();
 		
