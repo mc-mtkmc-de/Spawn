@@ -17,7 +17,7 @@ public class JoinListener implements Listener {
 	@EventHandler
 	public void handlePlayerJoin(PlayerJoinEvent event) {
 		Player player = event.getPlayer();
-		event.setJoinMessage("§aDer Spieler §6" + player.getName() + "§a hat den Server betreten.");
+		event.setJoinMessage("");
 		player.setGameMode(GameMode.SURVIVAL);
 		player.setFoodLevel(20);
 		player.setHealth(20);
